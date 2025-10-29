@@ -187,10 +187,6 @@ embeddings = HuggingFaceEmbeddings(
 GEMINI_API_KEY = "your_api_key_here"
 ```
 
-5. Deploy!
-
-**See [DEPLOYMENT_PROTECTION.md](DEPLOYMENT_PROTECTION.md) for security best practices.**
-
 ## 🛡️ Security
 
 - ✅ API keys stored in environment variables (never in code)
@@ -324,3 +320,4 @@ If you find this project useful, please give it a star! ⭐
 ---
 
 **Built with ❤️ using Google Gemini 2.0 Flash-Lite, LangChain, and Streamlit**
+
