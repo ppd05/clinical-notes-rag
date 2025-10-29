@@ -276,6 +276,20 @@ st.title("🏥 Clinical Notes RAG System")
 st.markdown("Upload clinical notes, extract structured data, and query with AI")
 st.info("🚀 Using Gemini 2.0 Flash-Lite + Free HuggingFace Embeddings")
 
+st.markdown(
+    """
+    <div style="background-color:#ffe6e6;padding:15px;border-radius:10px;margin-bottom:20px;">
+        <h4 style="color:#b30000;">⚠️ Disclaimer</h4>
+        <p style="color:#333333;">
+        This application is intended <b>for educational and research purposes only</b>.  
+        It should <b>not</b> be used for real-world clinical decision making or patient management.  
+        Always consult a qualified healthcare professional for medical advice or treatment.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Get API key from environment or secrets
 env_api_key = get_api_key()
 
@@ -451,4 +465,5 @@ if st.session_state.vector_store:
 st.markdown("---")
 
 st.markdown("*Powered by Gemini 2.0 Flash-Lite, HuggingFace Embeddings, LangChain, and FAISS*")
+
 
