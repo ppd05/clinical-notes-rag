@@ -1,7 +1,7 @@
 #Imports
 import streamlit as st
 import google.generativeai as genai
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain.docstore.document import Document
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -449,4 +449,5 @@ if st.session_state.vector_store:
 
 # Footer
 st.markdown("---")
+
 st.markdown("*Powered by Gemini 2.0 Flash-Lite, HuggingFace Embeddings, LangChain, and FAISS*")
